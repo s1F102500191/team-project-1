@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>チームで作るWebサイト</title>
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <title>日本地図リンク</title>
+  <style>
+    .map-container {
+      position: relative;
+      width: 600px;
+    }
+    .map-container img {
+      width: 100%;
+      height: auto;
+    }
+    .region-btn {
+      position: absolute;
+      padding: 4px 8px;
+      background: rgba(123, 124, 126, 0.7);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .hokkaido { top: 95px; left: 410px; }
+    .tohoku { top: 250px; left: 365px; }
+    .kanto { top: 380px; left: 325px; }
+    .chubu { top: 399px; left: 250px; }
+    .hokuriku { top: 360px; left: 260px; }
+    .chugoku { top: 405px; left: 155px; }
+    .shikoku { top: 455px; left: 150px; }
+    .kyushu { top: 490px; left: 70px; }
+    .okinawa { top: 520px; left: 200px; }
+  </style>
 </head>
 <body>
-    <h1>チームで作成するWebサイトです</h1>
-    <p class="red">内容はこれから書きます</p>
+<h1>Geoguessr攻略MAP</h1>
+<div class="map-container">
+  <img src="https://pictarts.com/18/material/01-prefectures/0003-illust-download-m.png" alt="日本地図">
+
+  <a href="hokkaido.html" class="region-btn hokkaido">北海道</a>
+  <a href="tohoku.html" class="region-btn tohoku">東北</a>
+  <a href="kanto.html" class="region-btn kanto">関東</a>
+  <a href="chubu.html" class="region-btn chubu">中部</a>
+  <a href="hokuriku.html" class="region-btn hokuriku">北陸</a>
+  <a href="chugoku.html" class="region-btn chugoku">中国</a>
+  <a href="shikoku.html" class="region-btn shikoku">四国</a>
+  <a href="kyushu.html" class="region-btn kyushu">九州</a>
+  <a href="okinawa.html" class="region-btn okinawa">沖縄</a>
+</div>
+
 </body>
 </html>
