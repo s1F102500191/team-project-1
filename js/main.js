@@ -16,3 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const cover = document.getElementById("cover");
+
+  if (cover && cover.classList.contains("active")) {
+    cover.classList.remove("active");
+    cover.style.display = "none";
+  }
+});
